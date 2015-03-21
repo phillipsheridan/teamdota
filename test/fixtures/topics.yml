@@ -2,8 +2,12 @@
 
 one:
   title: MyString
-  text: MyText
+  type: 
+  slots: 1
+  handle: MyString
 
 two:
   title: MyString
-  text: MyText
+  type: 
+  slots: 1
+  handle: MyString
