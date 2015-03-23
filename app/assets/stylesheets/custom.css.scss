@@ -5,7 +5,7 @@
 
 /* universal */
 html * {
-  font-family: FontAwesome;
+  font-family: FontAwesome !important;
 }
 
 body {
@@ -28,6 +28,8 @@ textarea {
 }
 
 /* typography */
+$light-gray: #777;
+$white: #fff;
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
@@ -46,7 +48,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: $light-gray;
 }
 
 p {
@@ -60,17 +62,26 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: $white;
   text-transform: capitalize;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   text-decoration: none;
+  &:hover{
+    color: $light-gray;
+    text-decoration: none;
+  }
 }
 
-#logo:hover {
-  color: #777;
-  text-decoration: none;
+header {
+  color: $white;
+  ul {
+    color: $white;
+    &:hover {
+      color: $light-gray;
+    }
+  }
 }
 
 /* footer */
@@ -79,10 +90,10 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #777;
+  color: $light-gray;
   a {
     color: #555;
-    hover {
+    &:hover {
       color: #222;
     }
   }
