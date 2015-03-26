@@ -2,12 +2,12 @@
 
 one:
   title: MyString
-  type: 
-  slots: 1
+  game_name: Dota
   handle: MyString
+  description: MyString
 
 two:
   title: MyString
-  type: 
-  slots: 1
+  game_name: LoL
   handle: MyString
+  description: MyString
