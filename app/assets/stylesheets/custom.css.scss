@@ -3,6 +3,15 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+/* palette colors */
+$light-gray: #777;
+$white: #fff;
+$dull-dark-green: #112222;
+$dull-grey-green: #77aa99;
+$dull-brown-green: #779988;
+$dull-light-green: #99bbbb;
+$dull-white-grey: #bbcccc;
+
 /* universal */
 html * {
   font-family: FontAwesome !important;
@@ -28,8 +37,6 @@ textarea {
 }
 
 /* typography */
-$light-gray: #777;
-$white: #fff;
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
@@ -48,12 +55,16 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $light-gray;
+  color: $dull-dark-green;
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+}
+
+.other-color {
+  background: $dull-white-grey;
 }
 
 /* header */
@@ -81,6 +92,12 @@ header {
     &:hover {
       color: $light-gray;
     }
+  }
+}
+
+@media (min-width: 1000px) {
+  .container{
+    max-width: 970px;
   }
 }
 
