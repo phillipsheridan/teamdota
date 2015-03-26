@@ -9,4 +9,9 @@ class TopicTest < ActiveSupport::TestCase
   test "should be valid" do
     assert @topic.valid?
   end
+
+  test "title should be present" do
+    @topic.title = "    "
+    assert_not @topic.valid?
+  end
 end
