@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'catalog/index'
+
+  get 'catalog/create'
+
   get 'static_pages/home'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -8,6 +12,10 @@ Rails.application.routes.draw do
  
 
   Rails.application.routes.draw do
+
+  get 'catalog/index'
+
+  get 'catalog/create'
 
   root 'static_pages#home'
 end
