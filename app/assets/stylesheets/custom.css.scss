@@ -55,12 +55,16 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $light-gray;
+  color: $dull-dark-green;
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+}
+
+.other-color {
+  background: $dull-white-grey;
 }
 
 /* header */
@@ -88,6 +92,12 @@ header {
     &:hover {
       color: $light-gray;
     }
+  }
+}
+
+@media (min-width: 1000px) {
+  .container{
+    max-width: 970px;
   }
 }
 
