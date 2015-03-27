@@ -6,3 +6,4 @@ Timestamp | Description | Completed?
 		| Develop way to choose filtered Topics from Home | N 
 26/03/15 10:13	| Add Catalog choices to Home | N
 		| Fill Catalog table	|N
+27/03/15 15:50	| Add more validations for models | N
