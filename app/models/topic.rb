@@ -1,4 +1,6 @@
 class Topic < ActiveRecord::Base
+  belongs_to :catalog 
+
   validates :title, presence: true
   validates :title, length: {minimum: 2}
   validates :title, length: {maximum: 140}
