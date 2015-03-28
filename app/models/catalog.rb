@@ -1,3 +1,3 @@
 class Catalog < ActiveRecord::Base
-  belongs_to :game_name
+  has_many :topics, :foreign_key => "game_name", :class_name => "Topic", dependent: :destroy
 end
