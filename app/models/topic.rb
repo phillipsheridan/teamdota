@@ -12,7 +12,7 @@ class Topic < ActiveRecord::Base
   validates :game_name, length: {maximum: 20}
 
   validates :text, presence: true
-  validate :text,length: {minimum: 10}
-  validate :text, length: {maximum: 150}
+  validates :text,length: {minimum: 10}
+  validates :text, length: {maximum: 150}
 
 end
