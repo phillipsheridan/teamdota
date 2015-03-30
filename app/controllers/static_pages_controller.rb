@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
   def home
-    @topics = Topic.all
+    @catalogs = Catalog.all
   end
 end
