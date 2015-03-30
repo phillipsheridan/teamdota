@@ -21,7 +21,7 @@
 <% @topics.each do |topic| %>
 >>>>>>> dev
   <tr>
-    <td><%= catalog.catalog_name %></td>
+    <td><%= link_to catalog.catalog_name, catalog_path(catalog.id)  %></td>
   </tr>
 <% end %>
 </table>
