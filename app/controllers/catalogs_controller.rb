@@ -1,6 +1,6 @@
 class CatalogsController < ApplicationController
   def show
-    @catalog = Catalog.where(:game_name)
+    @catalog = Catalog.find(params[:id])
   end
 
   def create
