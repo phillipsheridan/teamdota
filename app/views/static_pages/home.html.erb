@@ -2,21 +2,21 @@
 <div class="center jumbotron other-color">
   <h1>Welcome to Team Finder</h1>
   <p>
-    Some stuff about the website goes here.
+    Team Finder is a bulleton board for finding members of your gameplay caliber to fill out your team in any game your looking for. Find members, friends, clans, whatever your team finding needs are for games like Dota 2, League of Legends, Heroes of the Storm, etc. Check out the available catalogs and filter through some topics to find the team for you! 
   </p>
 </div>
 
-<div class="center">
+<div class="center jumbotron other-color">
 <table>
   <thead>
     <tr>
-      <th>Title</th>
+      <th><h2>Current Catalogs</h2></th>
       <th colspan="3"></th>
     </tr>
   </thead>
-<% @topics.each do |topic| %>
+<% @catalogs.each do |catalog| %>
   <tr>
-    <td><%= topic.title %></td>
+    <td><%= catalog.catalog_name %></td>
   </tr>
 <% end %>
 </table>
