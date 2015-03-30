@@ -14,7 +14,12 @@
       <th colspan="3"></th>
     </tr>
   </thead>
+<<<<<<< HEAD
 <% @catalogs.each do |catalog| %>
+=======
+ 
+<% @topics.each do |topic| %>
+>>>>>>> dev
   <tr>
     <td><%= link_to catalog.catalog_name, catalog_path(catalog.id)  %></td>
   </tr>
@@ -23,3 +28,13 @@
 </div>
 <%= link_to image_tag("dota2logo.png", alt: "Dota2 Logo", height: '32', width: '32'),
 	'http://blog.dota2.com/' %>
+  <%= link_to image_tag("league_logo-bfd94f798b1abfe6a036242419b3748b.png", alt: "League of Legends Logo", height: '32', width: '32'),
+  'http://leagueoflegends.com/' %>
+  <%= link_to image_tag("Heroes_Of_The_Storm_138203755237651.jpg", alt: "Heros of the Storm Logo", height: '32', width: '32'),
+  'http://us.battle.net/heroes/en/' %>
+  <%= link_to image_tag("smite Logo.png", alt: "Smite Logo", height: '32', width: '32'),
+  'http://www.hirezstudios.com/smite/' %>
+  <%= link_to image_tag("647225de-1a33-4385-b8d4-30f24cf97b53.png", alt: "Heroes of Newerth Logo", height: '32', width: '32'),
+  'http://www.heroesofnewerth.com' %>
+
+
