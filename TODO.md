@@ -9,3 +9,4 @@ Timestamp | Description | Completed?
 27/03/15 15:50	| Add more validations for models | N
 30/03/15 08:58	| Setup Topic page	| N
 		| Setup Administration Functions | N
+		| Create Heroku App	| N
