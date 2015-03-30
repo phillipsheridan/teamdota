@@ -5,5 +5,6 @@ class CatalogsController < ApplicationController
   end
 
   def create
+    #Administrator Function
   end
 end

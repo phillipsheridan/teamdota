@@ -13,7 +13,8 @@
   </thead>
 <% @topics.each do |topic| %>
   <tr>
-    <td><%= topic.title %></td>
+    <td><mark><%= link_to topic.title, topic_path(topic.id) %></mark></td>
+    <td><br><br><%= topic.handle%>, Created: <%= topic.created_at%></td>
   </tr>
 <% end %>
 </table>
