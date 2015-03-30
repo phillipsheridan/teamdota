@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'catalog/show'
+
   get 'catalog/index'
 
   get 'catalog/create'
@@ -12,6 +14,8 @@ Rails.application.routes.draw do
  
 
   Rails.application.routes.draw do
+
+  get 'catalog/show'
 
   get 'catalog/index'
 
