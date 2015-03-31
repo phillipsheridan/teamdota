@@ -3,20 +3,14 @@
   <h1><%=@catalog.catalog_name %></h1>
 </div>
 
-<div class="center jumbotron other-color">
-<table>
-  <thead>
-    <tr>
-      <th><h2>Topics</h2></th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-<% @topics.each do |topic| %>
-  <tr>
-    <td><mark><%= link_to topic.title, topic_path(topic.id) %></mark></td>
-    <td><br><br><%= topic.handle%>, Created: <%= topic.created_at%></td>
-  </tr>
-<% end %>
-</table>
-
+<div class="center container">
+  <div class="row">
+    <% @topics.each do |topic| %>
+      <div class="jumbotron col-md-3">
+          <p>
+  	    <%= topic.title %>
+  	  </p>
+      </div>
+    <% end %>
+  </div>
 </div>

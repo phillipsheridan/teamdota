@@ -67,6 +67,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+.jumbotron.col-md-3 {
+  background-color: $dull-brown-green;
+  border-radius: 20px;
+  border: 2.5px solid $dull-dark-green;
+  color: $dull-dark-green; 
+  padding: 0 10px 0 10px;
+  margin: 1%;
+  width: 30%;
+}
+
 .other-color {
   background: $dull-white-grey;
 }
@@ -122,4 +133,3 @@ footer {
     float: left;
   }
 }
-
