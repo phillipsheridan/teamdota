@@ -3,6 +3,19 @@
   <h1><%=@catalog.catalog_name %></h1>
 </div>
 
+<%= form_for Topic.new do |f| %>
+  <%= f.label :title %>:
+  <%= f.text_field :title %><br />
+
+  <%= f.label :handle %>:
+  <%= f.text_field :handle %><br />
+
+  <%= f.label :description %>:
+  <%= f.text_field :description %><br />
+
+  <%= f.submit %>
+<% end %>
+
 <div class="center container">
   <div class="row">
     <% @topics.each do |topic| %>

@@ -1,4 +1,7 @@
 class Topic < ActiveRecord::Base
+has_many :comments, :foreign_key => "topic_id", :class_name => "Comment", dependent: :destroy
+
+
   belongs_to :catalog 
 
   validates :title, presence: true
