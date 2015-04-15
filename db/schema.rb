@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20150414185546) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "catalogs", force: :cascade do |t|
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
@@ -20,7 +23,7 @@ ActiveRecord::Schema.define(version: 20150414185546) do
     t.string   "catalog_name"
   end
 
-  add_index "catalogs", ["game_name"], name: "index_catalogs_on_game_name", unique: true
+  add_index "catalogs", ["game_name"], name: "index_catalogs_on_game_name", unique: true, using: :btree
 
   create_table "comments", force: :cascade do |t|
     t.integer  "topic_id"
