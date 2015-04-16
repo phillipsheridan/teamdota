@@ -1,6 +1,9 @@
 class ChangeGameNameInCatalog < ActiveRecord::Migration
-  def change
-    remove_column :catalogs, :game_name_id
+  def down
     add_column :catalogs, :game_name, :string
+  end
+
+  def up
+  	remove_column :catalogs, :game_name_id, :true
   end
 end
