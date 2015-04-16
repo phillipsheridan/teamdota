@@ -5,6 +5,5 @@ class CreateCatalogs < ActiveRecord::Migration
 
       t.timestamps null: false
     end
-    add_foreign_key :catalogs, :topics, column: :game_name
   end
 end
