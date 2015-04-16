@@ -16,8 +16,8 @@ has_many :comments, :foreign_key => "topic_id", :class_name => "Comment", depend
   validates :game_name, length: {minimum: 2}
   validates :game_name, length: {maximum: 20}
 
-  validates :text, presence: true
-  validates :text,length: {minimum: 10}
-  validates :text, length: {maximum: 150}
+  validates :description, presence: true
+  validates :description,length: {minimum: 10}
+  validates :description, length: {maximum: 150}
 
 end
