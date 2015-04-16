@@ -17,5 +17,5 @@ catalog_list.each do |game_name, catalog_name|
 end
 
 lol_topics.each do |title, game_name, handle|
-	Topic.create(title: title, game_name: game_name, handle: handle, description: title)
+	Topic.create(title: title, game_name: game_name, handle: handle, description: )
 end
