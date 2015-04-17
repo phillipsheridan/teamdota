@@ -30,7 +30,9 @@
     <% @topics.each do |topic| %>
       <div class="jumbotron col-md-3">
           <p>
-  	    <%= topic.title %>
+  	    "<%= topic.title %>"<br />
+        <%= topic.handle%><br />
+        <%= topic.description %>
   	  </p>
       </div>
     <% end %>
