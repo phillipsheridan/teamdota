@@ -3,7 +3,7 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-/* palette colors */
+/* variables, mixins, etc */
 $light-gray: #777;
 $white: #fff;
 $dull-dark-green: #112222;
@@ -11,6 +11,12 @@ $dull-grey-green: #77aa99;
 $dull-brown-green: #779988;
 $dull-light-green: #99bbbb;
 $dull-white-grey: #bbcccc;
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
 
 /* universal */
 html * {
@@ -68,9 +74,25 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+a {
+  color: $dull-dark-green;
+}
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 75%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
 
 .jumbotron.col-md-3 {
-  background-color: $dull-brown-green;
+  background-color: $dull-white-grey;
   border-radius: 20px;
   border: 2.5px solid $dull-dark-green;
   color: $dull-dark-green; 

@@ -1,20 +1,29 @@
 <%provide(:title, @catalog.catalog_name)%>
 <div class="center jumbotron other-color">
   <h1><%=@catalog.catalog_name %></h1>
+
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <%= form_for [@catalog, Topic.new] do |f| %>
+        <%= render 'shared/error_messages' %>
+
+        <%= f.label :title %>
+        <%= f.text_field :title, class: 'form-control' %><br />
+
+        <%= f.label :handle %>
+        <%= f.text_field :handle, class: 'form-control' %><br />
+  
+        <%= f.label :description %>
+        <%= f.text_field :description, class: 'form-control' %><br />
+
+        <%= f.hidden_field(:game_name, :value => @catalog.game_name) %>
+
+        <%= f.submit "Create New Topic", class: "btn btn-primary"%>
+      <% end %>
+    </div>
+  </div>
 </div>
-
-<%= form_for Topic.new do |f| %>
-  <%= f.label :title %>:
-  <%= f.text_field :title %><br />
-
-  <%= f.label :handle %>:
-  <%= f.text_field :handle %><br />
-
-  <%= f.label :description %>:
-  <%= f.text_field :description %><br />
-
-  <%= f.submit %>
-<% end %>
 
 <div class="center container">
   <div class="row">
